@@ -1,0 +1,9 @@
+.bg-class {
+    background: #0044ff;
+    background: radial-gradient(circle, rgba(0, 68, 255, 1) 20%, rgba(240, 220, 70, 1) 100%);
+}
+
+main {
+    background: #0044ff;
+    background: radial-gradient(circle, rgba(0, 68, 255, 1) 48%, rgba(240, 220, 70, 1) 100%);
+}

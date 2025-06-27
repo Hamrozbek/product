@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style type="text/tailwindcss"></style>
+    <link rel="stylesheet" href="./css/main.css">
+    <title>Products</title>
+</head>
+<body>
+    <header class="p-5 shadow-md bg-class flex items-center justify-between">
+        <h1 class="text-white text-[25px] font-bold">Sarvar's Products</h1>
+        <div class="flex gap-5">
+            <input class="search-input bg-white rounded-[20px] outline-none p-2 w-[250px]" name="sarvarProducts" type="text" placeholder="Sarvar searching...">
+            <button onclick="handleCreate()" class="bg-white p-3 rounded-[20px] font-bold text-[20px] text-red-500 cursor-pointer">Create</button>
+        </div>
+    </header>
+    <main>
+        <section class="py-10">
+            <ul class="sarvar-product-list flex flex-wrap justify-center gap-[40px]"></ul>
+        </section>
+    </main>
+
+     <div id="wrapper"
+        class="modal-wrapper scale-0 duration-300 flex items-center justify-center fixed top-0 bottom-0 left-0 right-0 bg-[#00000097] backdrop-blur-[5px]">
+        <div class="modal-inner p-[20px] bg-white rounded-md"> </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <script src="./js/main.js"></script>
+</body>
+</html>
