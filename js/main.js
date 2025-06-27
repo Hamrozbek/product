@@ -78,7 +78,7 @@ function handleCreate() {
             title: e.target.title.value,
             price: e.target.price.value,
             description: e.target.description.value,
-            categoryId: 58,
+            categoryId: 35,
             images: [e.target.img.value]
         };
 
@@ -111,7 +111,7 @@ function handleEdit(id) {
                 title: e.target.title.value,
                 price: e.target.price.value,
                 description: e.target.description.value,
-                categoryId: 58,
+                categoryId: 35,
                 images: [e.target.img.value]
             };
             axios.put(url + `/${id}`, data).then(() => {
